@@ -1,0 +1,49 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Maze Solver</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Maze Solver</h1>
+        
+        <div class="controls">
+            <div class="size-controls">
+                <label>Rows: <input type="number" id="rows" min="5" max="15" value="5"></label>
+                <label>Cols: <input type="number" id="cols" min="5" max="15" value="5"></label>
+                <button id="resize">Resize Maze</button>
+            </div>
+            
+            <div class="draw-mode">
+                <button id="draw-wall" class="active">Wall</button>
+                <button id="draw-path">Path</button>
+                <button id="draw-clear">Clear</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="solve">Solve Maze</button>
+                <button id="reset">Reset</button>
+                <button id="random">Random Maze</button>
+                <button id="console-version">Show Console Version</button>
+            </div>
+        </div>
+        
+        <div id="maze-container">
+            <div id="maze"></div>
+        </div>
+        
+        <div id="solution-info"></div>
+        
+        <div id="cpp-code" class="hidden">
+            <h2>C++ Maze Solver Code</h2>
+            <pre id="cpp-code-content"></pre>
+        </div>
+    </div>
+</body>
+</html>
+```
